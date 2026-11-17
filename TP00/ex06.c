@@ -12,7 +12,7 @@ int main(void){
     }else if (age > 30 && age <= 60){
         printf("bonjour monsieur !\n");
     }else{
-        printf("bonjour manmie !");
+        printf("bonjour manmie !\n");
     }
 
     return 0;

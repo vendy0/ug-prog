@@ -7,7 +7,7 @@ int main(void) {
     unsigned int minutes;
     unsigned int secondes;
 
-    T = 364257;
+    T = 903219;
     heures = T/3600;
     minutes = (T%3600) / 60;
     secondes = T%60;
