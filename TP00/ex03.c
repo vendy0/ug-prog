@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-    unsigned int cote;
+    int cote;
     cote = 4;
     
     printf("Le périmètre du carré de coté %d est : %d\n", cote, cote*4);

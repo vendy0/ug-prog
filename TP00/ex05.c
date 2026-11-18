@@ -3,11 +3,10 @@
 int main(void){
     int number = -49;
 
-    if (number % 2 == 0){
+    if (number % 2 == 0)
         printf("pair\n");
-    }else{
+    else
         printf("impair\n");
-    }
 
     return 0;
 }

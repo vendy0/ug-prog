@@ -2,10 +2,10 @@
 
 
 int main(void) {
-    unsigned int T;
-    unsigned int heures;
-    unsigned int minutes;
-    unsigned int secondes;
+    int T;
+    int heures;
+    int minutes;
+    int secondes;
 
     T = 903219;
     heures = T/3600;
