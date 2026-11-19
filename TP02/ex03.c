@@ -7,7 +7,3 @@ int ft_cumulative(int number)
         sum += i;
     return sum;
 }
-
-int main(){
-    ft_cumulative(5);
-}

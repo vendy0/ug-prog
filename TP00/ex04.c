@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-
-int main(void) {
+int main(void) 
+{
     int T;
     int heures;
     int minutes;

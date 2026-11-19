@@ -1,8 +1,10 @@
 #include <stdio.h>
-int main(void) {
-    // Variables declaration
+int main(void) 
+{
+    // Variables declaration and assignment
     int a;
     int b;
+    
     a = 421;
     b = 4;
 

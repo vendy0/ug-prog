@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
     int number = -49;
 
     if (number % 2 == 0)
