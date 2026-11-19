@@ -1,16 +1,20 @@
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
     // Variables
     int a;
     int b;
     int total;
+    
     b = 0;
     total = 0;
 
-    while (b < 2) {
+    while (b < 2) 
+    {
         a = 0;
-        while (a < 3) {
+        while (a < 3) 
+        {
             a = a + 1;
             total = total + 1;
         }

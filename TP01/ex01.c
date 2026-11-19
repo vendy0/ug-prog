@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-int main(void){
-    unsigned int number = 20;
-    unsigned int compteur = 0;
+int main(void)
+{
+    int number = 20;
+    int compteur = 0;
 
-    while (compteur < number){
+    while (compteur < number)
+    {
         printf("%d\n", compteur);
         compteur++;
     }
