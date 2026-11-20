@@ -2,13 +2,13 @@
 
 int main(void)
 {
+    int cpt = 0;
     int number = 20;
-    int compteur = 0;
 
-    while (compteur < number)
+    while (cpt < number)
     {
-        printf("%d\n", compteur);
-        compteur++;
+        printf("%d\n", cpt);
+        cpt++;
     }
 
     return 0;
