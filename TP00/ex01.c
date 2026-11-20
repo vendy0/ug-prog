@@ -2,9 +2,8 @@
 
 int main(void)
 {
-    int number;
+    int number = 420;
     
-    number = 420;
     number = number + 1;
 
     printf("%d\n", number);

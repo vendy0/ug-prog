@@ -2,19 +2,11 @@
 
 int main(void) 
 {
-    int T;
-    int heures;
-    int minutes;
-    int secondes;
+    int T = 903219;
 
-    T = 903219;
-    heures = T/3600;
-    minutes = (T%3600) / 60;
-    secondes = T%60;
-    
-    printf("%d\n", heures);
-    printf("%d\n", minutes);
-    printf("%d\n", secondes);
+    printf("%d\n", T / 3600);
+    printf("%d\n", (T % 3600) / 60);
+    printf("%d\n", T % 60);
     
     return 0;
 }
