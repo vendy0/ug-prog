@@ -66,16 +66,11 @@ void show_results(int a, int b, int c)
 
 int main(void)
 {
-    // Variables declaration
-    int a;
-    int b;
-    int c;
+    // Variables declaration and assignment
+    int a = 5150;
+    int b = 2155;
+    int c = -4015;
     
-    // Variables assignment
-    a = 5150;
-    b = 2155;
-    c = -4158;
-
     // Calling the function to display the results
     show_results(a, b, c);
 
