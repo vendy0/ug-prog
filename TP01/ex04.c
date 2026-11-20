@@ -3,11 +3,9 @@
 // function to calculate square root of delta
 double square_root(int delta)
 {
-    double r;
-    int i;
+    double r = delta;
+    int i = 0;
 
-    r = delta;
-    i = 0;
     while (i < 50)
     {
         r = (r + delta / r) / 2;
@@ -21,9 +19,7 @@ double square_root(int delta)
 void show_one_solution(int a, int b)
 {
     // Initialisation and assignment
-    double x;
-
-    x = -b / (2.0 * a);
+    double x = -b / (2 * a);
     
     // Display of the solution
     printf("Il existe 1 solution\n");
@@ -35,11 +31,8 @@ void show_one_solution(int a, int b)
 void show_two_solutions(int a, int b, int delta)
 {
     // Initialisation then assignment
-    double x1;
-    double x2;
-
-    x1 = (-b - square_root(delta)) / (2.0 * a);
-    x2 = (-b + square_root(delta)) / (2.0 * a);
+    double x1 = (-b - square_root(delta)) / (2 * a);
+    double x2 = (-b + square_root(delta)) / (2 * a);
 
     // Display of the solutions
     printf("Il existe 2 solutions\n");
@@ -50,9 +43,7 @@ void show_two_solutions(int a, int b, int delta)
 // function to display the results
 void show_results(int a, int b, int c)
 {
-    int delta;
-
-    delta = b * b - 4 * a * c;
+    int delta = b * b - 4 * a * c;
 
     // Tests according to the different delta cases
     printf("Delta = %d\n", delta);

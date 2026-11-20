@@ -2,12 +2,11 @@
 
 int main(void)
 {
-    int number;
-    int somme = 0;
+    int sum = 0;
     
-    for (number = 1000; number > 0; number--)
-        somme += number;
-    printf("%d\n", somme);
+    for (int number = 1000; number > 0; number--)
+        sum += number;
+    printf("%d\n", sum);
 
     return 0;
 }

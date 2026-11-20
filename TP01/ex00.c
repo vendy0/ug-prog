@@ -3,12 +3,9 @@
 int main(void)
 {
     // Variables
-    int a;
-    int b;
+    int a = 0;
+    int b = 0;
     int total;
-    
-    b = 0;
-    total = 0;
 
     while (b < 2) 
     {
