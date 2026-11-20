@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <math.h>
 
 // function to calculate square root of delta
-double square_root(int delta)
+/* double sqrt(int delta)
 {
     double r = delta;
     int i = 0;
@@ -13,6 +14,7 @@ double square_root(int delta)
     }
     return r;
 }
+ */
 
 // function to show one solution
 // when delta = 0
@@ -23,7 +25,7 @@ void show_one_solution(int a, int b)
     
     // Display of the solution
     printf("Il existe 1 solution\n");
-    printf("x = %lf\n", x);
+    printf("x = %.3lf\n", x);
 }
 
 // function to show two solutions
@@ -31,13 +33,13 @@ void show_one_solution(int a, int b)
 void show_two_solutions(int a, int b, int delta)
 {
     // Initialisation then assignment
-    double x1 = (-b - square_root(delta)) / (2 * a);
-    double x2 = (-b + square_root(delta)) / (2 * a);
+    double x1 = (-b - sqrt(delta)) / (2 * a);
+    double x2 = (-b + sqrt(delta)) / (2 * a);
 
     // Display of the solutions
     printf("Il existe 2 solutions\n");
-    printf("x1 = %lf\n", x1);
-    printf("x2 = %lf\n", x2);
+    printf("x1 = %.3lf\n", x1);
+    printf("x2 = %.3lf\n", x2);
 }
 
 // function to display the results
@@ -58,9 +60,9 @@ void show_results(int a, int b, int c)
 int main(void)
 {
     // Variables declaration and assignment
-    int a = 5150;
-    int b = 2155;
-    int c = -4015;
+    int a = 0;
+    int b = 0;
+    int c = 0;
     
     // Calling the function to display the results
     show_results(a, b, c);

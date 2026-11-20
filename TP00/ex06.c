@@ -6,7 +6,7 @@ int main(void)
 
     if (age <= 1)
         printf("bonjour bébé !\n");
-    else if (age > 1&& age <= 14)
+    else if (age > 1 && age <= 14)
         printf("bonjour mes petits !\n");
     else if (age > 14 && age <= 30)
         printf("bonjour jeune homme !\n");
