@@ -1,22 +1,20 @@
 int ft_is_prime(int number)
-{   
-    int i;
-    int dividers = 0;
-
-    // If number is 0 or 1, return 0
+{
+    // If number is 0, 1 or a negative number, return 0
     if (number <= 1)
         return 0;
 
-    // Check each integer i from 1 while i * i <= number.
+    // Check each integer i from 1 while i <= number / i.
     // dividers is incremented only if i divides number and is not 1.
     // So if there is a divider, number is not a prime number.
-    for (i = 1; i * i <= number; i++)
+    for (int i = 2; i <= number / i; i++)
     {
-        if (i != 1 && !(number % i))
-            dividers++;
+        if (!(number % i))
+            return 0;
     }
-
-    if (dividers)
-        return 0;
     return 1;
 }
+
+// If n has a divisor other than 1 and n,
+// then it has one that is <= sqrt(n),
+// so checking i * i <= n is enough.
