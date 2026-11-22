@@ -3,9 +3,7 @@
 void print_even(int start, int end)
 {
     int even;
-    int i;
-
-    i = 0;
+    int i = 0;
 
     // Check each number between "start" and "end".
     // If the number is even, "if (!(even % 2))":
@@ -29,9 +27,7 @@ void print_even(int start, int end)
 void print_odd(int start, int end)
 {
     int odd;
-    int i;
-
-    i = 0;
+    int i = 0;
     
     // Check each number between "start" and "end".
     // If the number is odd, "if (even % 2)":

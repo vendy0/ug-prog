@@ -2,19 +2,26 @@
 
 void ft_print_number_len(int number)
 {
+    long n = number;
     int len = 0;
 
-    // Find the absolute value of number
-    if (number < 0)
-        number *= -1;
+    if (n == 0)
+    {
+        printf("%d\n", 1);
+        return;
+    }
 
-    // Do a first pass in case number is 0.
-    // Increment len, then remove the last digit with "number /= 10".
-    // Then repeat while number > 0.
-    do
+    // Find the absolute value of number
+    if (n < 0)
+        n = -n;
+
+    // while number > 0.
+    // increment len, 
+    // then remove the last digit with "number /= 10".
+    while (n > 0)
     {
         len++;
-        number /= 10;
-    } while (number > 0);
+        n /= 10;
+    }
     printf("%d\n", len);
 }
