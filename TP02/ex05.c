@@ -28,7 +28,7 @@ void print_odd(int start, int end)
 {
     int odd;
     int i = 0;
-    
+
     // Check each number between "start" and "end".
     // If the number is odd, "if (even % 2)":
     // on the first pass, display "Odd: " first.

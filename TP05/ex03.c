@@ -1,7 +1,7 @@
 int ft_fibonacci(int index)
 {
-    int i;
-    int j;
+    int number_one;
+    int number_two;
 
     if (index < 0)
         return -1;
@@ -10,8 +10,8 @@ int ft_fibonacci(int index)
     else if (index == 1)
         return 1;
 
-    i = ft_fibonacci(index - 1);
-    j = ft_fibonacci(index - 2);
+    number_one = ft_fibonacci(index - 1);
+    number_two = ft_fibonacci(index - 2);
 
-    return i + j;
+    return number_one + number_two;
 }

@@ -16,7 +16,7 @@ void ft_print_number_len(int number)
         n = -n;
 
     // while number > 0.
-    // increment len, 
+    // increment len,
     // then remove the last digit with "number /= 10".
     while (n > 0)
     {

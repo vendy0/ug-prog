@@ -1,42 +1,40 @@
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 
-// function to calculate square root of delta
-/* double sqrt(int delta)
+// function to show the result when a = 0
+// the equation becomes bx + c = 0
+void show_linear_solution(int b, int c)
 {
-    double r = delta;
-    int i = 0;
+    if (b == 0)
+        return;
 
-    while (i < 50)
-    {
-        r = (r + delta / r) / 2;
-        i = i + 1;
-    }
-    return r;
+    double x = (double)-c / b;
+    if (x == 0)
+        x = 0.0; // avoids displaying "-0.000"
+
+    printf("Il existe 1 solution\n");
+    printf("x = %.3lf\n", x);
 }
- */
 
 // function to show one solution
-// when delta = 0
+// when delta = 0 (a != 0)
 void show_one_solution(int a, int b)
 {
-    // Initialisation and assignment
-    double x = -b / (2 * a);
-    
-    // Display of the solution
+    double x = (double)-b / (2 * a); // cast avoids integer division
+    if (x == 0)
+        x = 0.0;
+
     printf("Il existe 1 solution\n");
     printf("x = %.3lf\n", x);
 }
 
 // function to show two solutions
-// when delta > 0
+// when delta > 0 (a != 0)
 void show_two_solutions(int a, int b, int delta)
 {
-    // Initialisation then assignment
     double x1 = (-b - sqrt(delta)) / (2 * a);
     double x2 = (-b + sqrt(delta)) / (2 * a);
 
-    // Display of the solutions
     printf("Il existe 2 solutions\n");
     printf("x1 = %.3lf\n", x1);
     printf("x2 = %.3lf\n", x2);
@@ -45,9 +43,15 @@ void show_two_solutions(int a, int b, int delta)
 // function to display the results
 void show_results(int a, int b, int c)
 {
+    // First degree equation: no discriminant needed
+    if (a == 0)
+    {
+        show_linear_solution(b, c);
+        return;
+    }
+
     int delta = b * b - 4 * a * c;
 
-    // Tests according to the different delta cases
     printf("Delta = %d\n", delta);
     if (delta > 0)
         show_two_solutions(a, b, delta);
@@ -59,12 +63,10 @@ void show_results(int a, int b, int c)
 
 int main(void)
 {
-    // Variables declaration and assignment
     int a = 0;
-    int b = 0;
-    int c = 0;
-    
-    // Calling the function to display the results
+    int b = 2;
+    int c = -4;
+
     show_results(a, b, c);
 
     return 0;
