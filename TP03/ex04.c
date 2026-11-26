@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 // function to calculate square root of a number
 int ft_sqrt(int number)
 {
