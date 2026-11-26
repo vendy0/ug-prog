@@ -10,7 +10,7 @@ int ft_power(int number, int power)
         if (result == 0)
             result++;
         result *= number;
-    }  
-    
+    }
+
     return result;
 }
