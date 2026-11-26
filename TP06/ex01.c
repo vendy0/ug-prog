@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 int ft_get_average(int tab[], int size)
 {
     int sum = 0;
