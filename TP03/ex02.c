@@ -13,6 +13,7 @@ void ft_triangle(int number)
     {
         for (int j = 0; j <= i; j++)
             write(1, "*", 1);
-        write(1, "\n", 1);
+        if (i != number - 1)
+            write(1, "\n", 1);
     }
 }
