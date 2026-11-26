@@ -26,9 +26,9 @@ void ft_triangle_v2(int number)
     for (int i = 0; i <= number; i++)
     {
         for (int j = 0; j <= i; j++)
-        {
             ft_putnbr(j);
-        }
-        write(1, "\n", 1);
+
+        if (i != number)
+            write(1, "\n", 1);
     }
 }
