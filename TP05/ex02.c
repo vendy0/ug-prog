@@ -1,4 +1,3 @@
-
 int ft_recursive_power(int nbr, int power)
 {
     int i = 0;
